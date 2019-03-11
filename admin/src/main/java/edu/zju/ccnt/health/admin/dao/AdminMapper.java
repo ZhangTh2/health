@@ -1,8 +1,12 @@
 package edu.zju.ccnt.health.admin.dao;
 
 import edu.zju.ccnt.health.admin.model.Admin;
+import edu.zju.ccnt.health.admin.vo.DetailInfoVo;
+import edu.zju.ccnt.health.admin.vo.SearchInfoVo;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
 
 public interface AdminMapper {
     /**
@@ -54,4 +58,31 @@ public interface AdminMapper {
     int updateByPrimaryKey(Admin record);
 
     Integer validateAdmin(@Param("username") String username, @Param("password") String password);
+
+    int getRoleById(@Param("id") Integer id);
+
+    List<Admin> getAdminByRole(@Param("role_id") Integer role_id);
+
+    /*
+        在连接数据库时配置useAffectedRows=true时update返回的值是受到影响的行数，否则是match的行数
+    */
+
+    //根据编号将管理员离职
+    int deleteById(@Param("id") Integer id);
+
+    //根据标号审核管理员
+    int checkById(@Param("id") Integer id);
+
+    //搜索名字是否存在
+    Integer checkName(@Param("name") String name);
+
+    //根据搜索条件来搜索管理员名单
+    List<DetailInfoVo> searchByCondition(@Param("role_id") Integer roleId, @Param("username") String username, @Param("name") String name, @Param("checked") Integer checked, @Param("sort") String sort, @Param("page") Integer page, @Param("limit") Integer limit);
+   //根据搜索条件获得总量
+    Integer searchtotalByCondition(@Param("role_id") Integer roleId, @Param("username") String username, @Param("name") String name, @Param("checked") Integer checked);
+//    SearchInfoVo searchByCondition(@Param("role_id") Integer roleId, @Param("username") String username, @Param("name") String name, @Param("checked") Integer checked, @Param("sort") String sort, @Param("page") Integer page, @Param("limit") Integer limit);
+
+    //获取总量是多少
+    Integer getTotal();
+
 }
