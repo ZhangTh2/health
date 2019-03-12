@@ -27,19 +27,22 @@ public class ServiceCategoryImpl implements IServiceCategoryService {
         List<ServiceCategory> serviceCategoryList1 = serviceCategoryMapper.selectByParentId(0);
         for (ServiceCategory serviceCategory1 : serviceCategoryList1){
             ServiceCategoryVO serviceCategoryVO1 = new ServiceCategoryVO();
-            serviceCategoryVO1.setServiceCategory(serviceCategory1);
+            serviceCategoryVO1.setId(serviceCategory1.getId());
+            serviceCategoryVO1.setLabel(serviceCategory1.getName());
             List<ServiceCategory> serviceCategoryList2 = serviceCategoryMapper.selectByParentId(serviceCategory1.getId());
             for (ServiceCategory serviceCategory2 :serviceCategoryList2) {
                 ServiceCategoryVO serviceCategoryVO2 = new ServiceCategoryVO();
-                serviceCategoryVO2.setServiceCategory(serviceCategory2);
+                serviceCategoryVO2.setId(serviceCategory2.getId());
+                serviceCategoryVO2.setLabel(serviceCategory2.getName());
                 List<ServiceCategory> serviceCategoryList3 = serviceCategoryMapper.selectByParentId(serviceCategory2.getId());
                 for(ServiceCategory serviceCategory3 : serviceCategoryList3){
                     ServiceCategoryVO serviceCategoryVO3 = new ServiceCategoryVO();
-                    serviceCategoryVO3.setServiceCategory(serviceCategory3);
-                    serviceCategoryVO3.setChilds(null);
-                    serviceCategoryVO2.getChilds().add(serviceCategoryVO3);
+                    serviceCategoryVO3.setId(serviceCategory3.getId());
+                    serviceCategoryVO3.setLabel(serviceCategory3.getName());
+                    serviceCategoryVO3.setChildren(null);
+                    serviceCategoryVO2.getChildren().add(serviceCategoryVO3);
                 }
-                serviceCategoryVO1.getChilds().add(serviceCategoryVO2);
+                serviceCategoryVO1.getChildren().add(serviceCategoryVO2);
             }
             serviceCategoryVOList.add(serviceCategoryVO1);
         }

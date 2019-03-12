@@ -12,6 +12,7 @@ import java.util.List;
  */
 @Data
 public class ServiceCategoryVO {
-    private ServiceCategory serviceCategory;
-    private List<ServiceCategoryVO> childs;
+    private int id;
+    private String label;
+    private List<ServiceCategoryVO> children;
 }
