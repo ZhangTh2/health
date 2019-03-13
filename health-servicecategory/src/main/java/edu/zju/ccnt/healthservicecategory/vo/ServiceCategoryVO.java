@@ -3,6 +3,7 @@ package edu.zju.ccnt.healthservicecategory.vo;
 import edu.zju.ccnt.healthservicecategory.model.ServiceCategory;
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,5 +15,6 @@ import java.util.List;
 public class ServiceCategoryVO {
     private int id;
     private String label;
-    private List<ServiceCategoryVO> children;
+    private Integer level;
+    private List<ServiceCategoryVO> children = new ArrayList<>();
 }

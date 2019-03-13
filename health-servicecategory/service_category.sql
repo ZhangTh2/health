@@ -4,6 +4,7 @@ create table IF NOT EXISTS `service_category` (
 `id` INT AUTO_INCREMENT,
 `name` varchar(50) NOT NULL,
 `parent_id`  INT,
+`level` INT,
 `icon` varchar(40),
 `gmt_create` TIMESTAMP,
 `gmt_modified` TIMESTAMP,

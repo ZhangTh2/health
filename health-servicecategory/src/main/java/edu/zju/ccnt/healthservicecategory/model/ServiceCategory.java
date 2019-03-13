@@ -9,6 +9,11 @@ public class ServiceCategory {
 
     private Integer parentId;
 
+    /**
+     * 添加level字段表示位于树的第几层
+     */
+    private Integer level;
+
     private String icon;
 
     private Date gmtCreate;
@@ -37,6 +42,14 @@ public class ServiceCategory {
 
     public void setParentId(Integer parentId) {
         this.parentId = parentId;
+    }
+
+    public Integer getLevel() {
+        return level;
+    }
+
+    public void setLevel(Integer level) {
+        this.level = level;
     }
 
     public String getIcon() {

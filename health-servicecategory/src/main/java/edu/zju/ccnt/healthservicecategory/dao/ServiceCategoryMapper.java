@@ -1,6 +1,7 @@
 package edu.zju.ccnt.healthservicecategory.dao;
 
 import edu.zju.ccnt.healthservicecategory.model.ServiceCategory;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
@@ -25,5 +26,5 @@ public interface ServiceCategoryMapper {
      * @param parentId
      * @return 根据parentId搜索符合条件的服务类别列表
      */
-    List<ServiceCategory> selectByParentId(@RequestParam("parent_id") Integer parentId);
+    List<ServiceCategory> selectByParentId(@Param("parent_id") Integer parentId);
 }
