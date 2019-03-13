@@ -27,4 +27,11 @@ public interface ServiceCategoryMapper {
      * @return 根据parentId搜索符合条件的服务类别列表
      */
     List<ServiceCategory> selectByParentId(@Param("parent_id") Integer parentId);
+
+    /**
+     * 假删除，将parent_id置为-1
+     * @param id
+     * @return 影响条数
+     */
+    int removeById(@Param("id") Integer id);
 }

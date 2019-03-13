@@ -28,7 +28,7 @@
       icon, gmt_create, gmt_modified
       )
     values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{parentId,jdbcType=INTEGER}, #{level,jdbcType=INTEGER}
-      #{icon,jdbcType=VARCHAR}, #{gmtCreated,jdbcType=TIMESTAMP}, #{gmtModified,jdbcType=TIMESTAMP}
+      #{icon,jdbcType=VARCHAR}, #{gmtCreate,jdbcType=TIMESTAMP}, #{gmtModified,jdbcType=TIMESTAMP}
       )
   </insert>
   <insert id="insertSelective" parameterType="edu.zju.ccnt.healthservicecategory.model.ServiceCategory">
@@ -44,12 +44,12 @@
         parent_id,
       </if>
       <if test="level != null">
-        parent_id,
+        level,
       </if>
       <if test="icon != null">
         icon,
       </if>
-      <if test="gmtCreated != null">
+      <if test="gmtCreate != null">
         gmt_create,
       </if>
       <if test="gmtModified != null">
@@ -72,8 +72,8 @@
       <if test="icon != null">
         #{icon,jdbcType=VARCHAR},
       </if>
-      <if test="gmtCreated != null">
-        #{gmtCreated,jdbcType=TIMESTAMP},
+      <if test="gmtCreate != null">
+        #{gmtCreate,jdbcType=TIMESTAMP},
       </if>
       <if test="gmtModified != null">
         #{gmtModified,jdbcType=TIMESTAMP},
@@ -95,7 +95,7 @@
       <if test="icon != null">
         icon = #{icon,jdbcType=VARCHAR},
       </if>
-      <if test="gmtCreated != null">
+      <if test="gmtCreate != null">
         gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
       </if>
       <if test="gmtModified != null">
@@ -120,4 +120,9 @@
     from service_category
     where parent_id = #{parent_id,jdbcType=INTEGER}
   </select>
+  <update id="removeById" parameterType="java.lang.Integer">
+    update service_category
+    set parent_id = -1
+    where id = #{id,jdbcType=INTEGER}
+  </update>
 </mapper>

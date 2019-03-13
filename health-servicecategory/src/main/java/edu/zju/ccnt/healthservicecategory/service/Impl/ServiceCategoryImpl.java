@@ -10,7 +10,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -21,8 +23,10 @@ import java.util.List;
 public class ServiceCategoryImpl implements IServiceCategoryService {
 
     private static final Logger logger = LoggerFactory.getLogger(ServiceCategoryImpl.class);
+
     @Autowired
     private ServiceCategoryMapper serviceCategoryMapper;
+
     public ServerResponse<List<ServiceCategoryVO>> listCategories(){
         logger.info("获取服务类别列表");
         List<ServiceCategoryVO> serviceCategoryVOList = new ArrayList<>();
@@ -44,7 +48,6 @@ public class ServiceCategoryImpl implements IServiceCategoryService {
                     serviceCategoryVO3.setId(serviceCategory3.getId());
                     serviceCategoryVO3.setLabel(serviceCategory3.getName());
                     serviceCategoryVO3.setLevel(serviceCategory3.getLevel());
-                    serviceCategoryVO3.setChildren(null);
                     serviceCategoryVO2.getChildren().add(serviceCategoryVO3);
                 }
                 serviceCategoryVO1.getChildren().add(serviceCategoryVO2);
@@ -52,5 +55,49 @@ public class ServiceCategoryImpl implements IServiceCategoryService {
             serviceCategoryVOList.add(serviceCategoryVO1);
         }
         return ServerResponse.createBySuccess(serviceCategoryVOList);
+    }
+
+    public ServerResponse update(Integer id, String name){
+        logger.info("更新"+id+"的商品分类信息");
+        ServiceCategory serviceCategory = new ServiceCategory();
+        serviceCategory.setId(id);
+        serviceCategory.setName(name);
+        serviceCategory.setGmtModified(new Timestamp(System.currentTimeMillis()));
+        try{
+            serviceCategoryMapper.updateByPrimaryKeySelective(serviceCategory);
+            return ServerResponse.createBySuccess();
+        }catch (Exception e){
+            logger.error(e.toString());
+            return ServerResponse.createByError();
+        }
+    }
+
+    public ServerResponse create(Integer parentId,String name,Integer level) {
+        logger.info("添加"+name+"分类信息");
+        ServiceCategory serviceCategory = new ServiceCategory();
+        serviceCategory.setParentId(parentId);
+        serviceCategory.setName(name);
+        serviceCategory.setLevel(level);
+        serviceCategory.setGmtCreate(new Timestamp(System.currentTimeMillis()));
+        try{
+            serviceCategoryMapper.insertSelective(serviceCategory);
+            return ServerResponse.createBySuccess();
+        }catch (Exception e){
+            logger.error(e.toString());
+            return ServerResponse.createByError();
+        }
+    }
+
+    /**
+     * 先简单做一下假删除，置parentId为-1,应该考虑如果这个分类及其子分类下有商品的话不应该删除这个分类
+     */
+    public ServerResponse remove(Integer id){
+        try {
+            serviceCategoryMapper.removeById(id);
+            return ServerResponse.createBySuccess();
+        }catch (Exception e){
+            logger.error(e.toString());
+            return ServerResponse.createByError();
+        }
     }
 }
