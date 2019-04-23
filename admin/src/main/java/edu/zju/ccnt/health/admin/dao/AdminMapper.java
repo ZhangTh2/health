@@ -85,4 +85,7 @@ public interface AdminMapper {
     //获取总量是多少
     Integer getTotal();
 
+    //根据role获取未审核的管理员
+    Integer getUnckeckedNumByRoleId(@Param("role_id")Integer roleId);
+
 }

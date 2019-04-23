@@ -63,28 +63,19 @@ public class AdminController {
     }
 
     @RequestMapping(value = "/searchAdmin",method = RequestMethod.POST)
-   // public ServerResponse search(@RequestParam Integer role_id,@RequestParam String username,@RequestParam String name,@RequestParam Integer checked,@RequestParam String sort,@RequestParam Integer page,@RequestParam Integer limit) {
     public ServerResponse search(@RequestBody Map<String,String> query) {
-       // System.out.println(query);
         Integer role_id = Integer.valueOf(query.get("role_id"));
-       // System.out.println("role_id是"+role_id);
         String username=query.get("username");
-        //System.out.println("username是"+username);
         String name = query.get("name");
-        //System.out.println("name是"+name);
         Integer checked;
         if(query.get("checked").isEmpty()) {
             checked = 3;
         }else {
             checked = Integer.valueOf(query.get("checked"));
         }
-       // System.out.println("checked是"+checked);
         String sort=query.get("sort");
-        //System.out.println("sort是"+sort);
         Integer page = Integer.valueOf(query.get("page"));
-       // System.out.println("page是"+page);
         Integer limit =Integer.valueOf(query.get("limit"));
-       // System.out.println("limit是"+limit);
         return iAdminService.searchAdminlist(role_id,username,name,checked,sort,page,limit);
     }
 
@@ -95,7 +86,6 @@ public class AdminController {
 
     @RequestMapping(value = "/createAdmin",method = RequestMethod.POST)
     public ServerResponse create(@RequestBody Map<String,String> adminmap) {
-        System.out.println("进来了"+adminmap.toString());
         Admin admin =new Admin();
         admin.setUsername(adminmap.get("username"));
         admin.setPassword(adminmap.get("password"));
@@ -110,6 +100,23 @@ public class AdminController {
         java.util.Date date =new java.util.Date();
         admin.setCreateTime(new Timestamp(date.getTime()));
         return iAdminService.createAdmin(admin);
+    }
+
+    @RequestMapping(value = "/insertAdmin",method = RequestMethod.POST)
+    public ServerResponse insert(@RequestBody Map<String,String> adminmap) {
+        Admin admin =new Admin();
+        admin.setUsername(adminmap.get("username"));
+        admin.setPassword(adminmap.get("password"));
+        admin.setChecked(0);
+        admin.setRoleId(Integer.valueOf(adminmap.get("roleId")));
+        admin.setName(adminmap.get("name"));
+        admin.setPhone(adminmap.get("phone"));
+        admin.setEmail(adminmap.get("email"));
+        admin.setBankType(adminmap.get("bankType"));
+        admin.setAccountNumber(adminmap.get("accountNumber"));
+        java.util.Date date =new java.util.Date();
+        admin.setCreateTime(new Timestamp(date.getTime()));
+        return iAdminService.insert(admin);
     }
 
     @RequestMapping(value = "/updateAdmin",method = RequestMethod.POST)
@@ -134,7 +141,10 @@ public class AdminController {
         return iAdminService.getSelf(token);
     }
 
-
+    @RequestMapping(value = "/getUnckeck",method = RequestMethod.GET)
+    public  ServerResponse getUnckeck(){
+        return iAdminService.getUnchecked();
+    }
 
 
 }

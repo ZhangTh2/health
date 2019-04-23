@@ -28,6 +28,16 @@ public class ServiceCategoryController {
     }
 
     /**
+     * 服务管理展示页使用的数据
+     * 获取所有服务类别
+     * @return 包含三级的服务分类列表
+     */
+    @RequestMapping(value = "/getlist",method = RequestMethod.GET)
+    public ServerResponse getlist() {
+        return  iServiceCategoryService.listcategoriesTwo();
+    }
+
+    /**
      * 更新操作
      * @param categoryMap
      * @return statusCode
@@ -40,7 +50,7 @@ public class ServiceCategoryController {
     }
 
     /**
-     * 插入操作
+     * 插入子分类操作
      * @param categoryMap
      * @return statusCode
      */
@@ -60,5 +70,15 @@ public class ServiceCategoryController {
     @RequestMapping(value = "/remove",method = RequestMethod.GET)
     public ServerResponse create(@RequestParam Integer id){
         return iServiceCategoryService.remove(id);
+    }
+
+    /**
+     * 添加服务大分类
+     * @param category
+     * @return
+     */
+    @RequestMapping(value="/insert",method = RequestMethod.GET)
+    public ServerResponse insert(@RequestParam String category){
+        return  iServiceCategoryService.insert(category);
     }
 }

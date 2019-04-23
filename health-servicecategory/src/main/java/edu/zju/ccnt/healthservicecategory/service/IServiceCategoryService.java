@@ -2,6 +2,7 @@ package edu.zju.ccnt.healthservicecategory.service;
 
 import edu.zju.ccnt.healthservicecategory.response.ServerResponse;
 import edu.zju.ccnt.healthservicecategory.vo.ServiceCategoryVO;
+import edu.zju.ccnt.healthservicecategory.vo.ServiceVo;
 
 import java.util.List;
 
@@ -16,7 +17,12 @@ public interface IServiceCategoryService {
     ServerResponse<List<ServiceCategoryVO>> listCategories();
 
     /**
-     * 更新商品分类
+     * @return 服务添加管理页面的战术数据
+     */
+    ServerResponse<List<ServiceVo> > listcategoriesTwo();
+
+    /**
+     * 更新服务分类
      * @param id
      * @param name
      * @return 状态码
@@ -24,7 +30,7 @@ public interface IServiceCategoryService {
     ServerResponse update(Integer id,String name);
 
     /**
-     * 添加商品分类
+     * 添加子服务分类
      * @param parentId
      * @param name
      * @param level
@@ -38,5 +44,14 @@ public interface IServiceCategoryService {
      * @return 状态码
      */
     ServerResponse remove(Integer id);
+
+    /**
+     * 添加大的服务分类
+     * @param name
+     * @return status
+     */
+    ServerResponse insert(String name);
+
+
 }
 

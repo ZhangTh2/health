@@ -27,14 +27,22 @@ public interface IAdminService {
     //超级管理员新建的管理员
     ServerResponse createAdmin(Admin admin);
     //条件搜索管理员列表，分页
-//    ServerResponse<List<DetailInfoVo> > searchAdminlist(Integer role_id,String username,String name,Integer checked,String sort,Integer page,Integer limit);
-    ServerResponse<SearchInfoVo > searchAdminlist(Integer role_id,String username,String name,Integer checked,String sort,Integer page,Integer limit);
+//  ServerResponse<List<DetailInfoVo> > searchAdminlist(Integer role_id,String username,String name,Integer checked,String sort,Integer page,Integer limit);
+    ServerResponse<SearchInfoVo> searchAdminlist(Integer role_id,String username,String name,Integer checked,String sort,Integer page,Integer limit);
     //id获取管理员
-    ServerResponse<Admin > getAdmin(Integer id);
+    ServerResponse<Admin> getAdmin(Integer id);
     //管理员更新
     ServerResponse update(Admin admin);
     //管理员总数
     ServerResponse<Integer> getToatl();
     //当前登录的管理员的详细信息返回
     ServerResponse<Admin> getSelf(String token);
+    //自己申请注册的管理员
+    ServerResponse insert(Admin admin);
+
+    /**
+     * 获取未审核的管理员
+     * @return
+     */
+    ServerResponse<Map<String,Integer> > getUnchecked();
 }

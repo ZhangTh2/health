@@ -12,6 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
 import java.util.*;
 
 @Slf4j
@@ -136,6 +137,37 @@ public class AdminServiceImpl implements IAdminService {
     public ServerResponse<Admin> getSelf(String token) {
         log.info("获取管理员自身的信息");
         return ServerResponse.createBySuccess(adminMapper.selectByPrimaryKey(Integer.valueOf(JwtUtil.getIdByToekn(token))));
+    }
+
+    /**
+     * 用户自己注册管理员，置为未审核状态
+     * @param admin
+     * @return status
+     */
+    public ServerResponse insert(Admin admin) {
+        log.info("自己注册的管理员");
+        try {
+            adminMapper.insertSelective(admin);
+            return ServerResponse.createBySuccess();
+        }catch (Exception e){
+            log.error(e.toString());
+            return ServerResponse.createByError();
+        }
+    }
+
+    /**
+     * 获取未审核的管理员数量
+     * @return {service:num;bussiness:num}
+     */
+    public ServerResponse<Map<String,Integer> > getUnchecked(){
+        log.info("获取未审核的管理员数量");
+        Map<String,Integer> result = new HashMap<>();
+        Integer number = adminMapper.getUnckeckedNumByRoleId(3);
+        result.put("service",number);
+        number = adminMapper.getUnckeckedNumByRoleId(2);
+        result.put("bussiness",number);
+        return ServerResponse.createBySuccess(result);
+
     }
 
 }

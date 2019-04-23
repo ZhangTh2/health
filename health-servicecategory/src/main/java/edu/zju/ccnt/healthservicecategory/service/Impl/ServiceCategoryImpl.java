@@ -5,6 +5,8 @@ import edu.zju.ccnt.healthservicecategory.model.ServiceCategory;
 import edu.zju.ccnt.healthservicecategory.response.ServerResponse;
 import edu.zju.ccnt.healthservicecategory.service.IServiceCategoryService;
 import edu.zju.ccnt.healthservicecategory.vo.ServiceCategoryVO;
+import edu.zju.ccnt.healthservicecategory.vo.ServiceVo;
+import edu.zju.ccnt.healthservicecategory.vo.ServiceVo1;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +21,7 @@ import java.util.List;
  * @author zth
  * @date 2019.3.12
  */
-@Service("IServiceCategory")
+@Service("iServiceCategoryService")
 public class ServiceCategoryImpl implements IServiceCategoryService {
 
     private static final Logger logger = LoggerFactory.getLogger(ServiceCategoryImpl.class);
@@ -57,6 +59,48 @@ public class ServiceCategoryImpl implements IServiceCategoryService {
         return ServerResponse.createBySuccess(serviceCategoryVOList);
     }
 
+    public ServerResponse<List<ServiceVo> > listcategoriesTwo() {
+        logger.info("服务添加管理页获取服务类别列表");
+        List<ServiceVo> serviceVOList = new ArrayList<>();
+        List<ServiceCategory> serviceCategoryList1 = serviceCategoryMapper.selectByParentId(0);
+        for (ServiceCategory serviceCategory1 : serviceCategoryList1){
+
+            List<ServiceCategory> serviceCategoryList2 = serviceCategoryMapper.selectByParentId(serviceCategory1.getId());
+            if(serviceCategoryList2.size()==0) {
+                ServiceVo serviceVO1 = new ServiceVo();
+                serviceVO1.setValue(serviceCategory1.getId());
+                serviceVO1.setLabel(serviceCategory1.getName());
+                serviceVOList.add(serviceVO1);
+                continue;
+            }
+            ServiceVo1 serviceVo1 = new ServiceVo1();
+            serviceVo1.setValue(serviceCategory1.getId());
+            serviceVo1.setLabel(serviceCategory1.getName());
+            for (ServiceCategory serviceCategory2 :serviceCategoryList2) {
+                List<ServiceCategory> serviceCategoryList3 = serviceCategoryMapper.selectByParentId(serviceCategory2.getId());
+                if(serviceCategoryList3.size()==0){
+                    ServiceVo serviceVO2 = new ServiceVo();
+                    serviceVO2.setValue(serviceCategory2.getId());
+                    serviceVO2.setLabel(serviceCategory2.getName());
+                    serviceVo1.getChildren().add(serviceVO2);
+                    continue;
+                }
+                ServiceVo1 serviceVo2 = new ServiceVo1();
+                serviceVo2.setValue(serviceCategory2.getId());
+                serviceVo2.setLabel(serviceCategory2.getName());
+                for(ServiceCategory serviceCategory3 : serviceCategoryList3){
+                    ServiceVo serviceVo3 = new ServiceVo();
+                    serviceVo3.setValue(serviceCategory3.getId());
+                    serviceVo3.setLabel(serviceCategory3.getName());
+                    serviceVo2.getChildren().add(serviceVo3);
+                }
+                serviceVo1.getChildren().add(serviceVo2);
+            }
+            serviceVOList.add(serviceVo1);
+        }
+        return ServerResponse.createBySuccess(serviceVOList);
+    }
+
     public ServerResponse update(Integer id, String name){
         logger.info("更新"+id+"的商品分类信息");
         ServiceCategory serviceCategory = new ServiceCategory();
@@ -72,6 +116,13 @@ public class ServiceCategoryImpl implements IServiceCategoryService {
         }
     }
 
+    /**
+     * 添加子分类的服务
+     * @param parentId
+     * @param name
+     * @param level
+     * @return
+     */
     public ServerResponse create(Integer parentId,String name,Integer level) {
         logger.info("添加"+name+"分类信息");
         ServiceCategory serviceCategory = new ServiceCategory();
@@ -100,4 +151,27 @@ public class ServiceCategoryImpl implements IServiceCategoryService {
             return ServerResponse.createByError();
         }
     }
+
+    /**
+     * 添加大分类的服务
+     * @param name
+     * @return
+     */
+    public ServerResponse insert(String name){
+        logger.info("添加"+name+"大类");
+        try {
+            ServiceCategory serviceCategory = new ServiceCategory();
+            serviceCategory.setName(name);
+            serviceCategory.setParentId(0);
+            serviceCategory.setLevel(1);
+            serviceCategory.setGmtCreate(new Timestamp(System.currentTimeMillis()));
+            serviceCategoryMapper.insertSelective(serviceCategory);
+            return ServerResponse.createBySuccess();
+        }catch (Exception e){
+            logger.error(e.toString());
+            return ServerResponse.createByError();
+        }
+    }
+
+
 }

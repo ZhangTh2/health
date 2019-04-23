@@ -1,1 +1,0 @@
-keytool -list -rfc --keystore cnsesan-jwt.jks | openssl x509 -inform pem -pubkey

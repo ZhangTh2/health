@@ -34,4 +34,6 @@ public interface ServiceCategoryMapper {
      * @return 影响条数
      */
     int removeById(@Param("id") Integer id);
+
+
 }

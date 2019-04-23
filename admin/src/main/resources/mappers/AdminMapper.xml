@@ -327,6 +327,13 @@
     from admin
   </select>
 
+  <select id="getUnckeckedNumByRoleId" resultType="java.lang.Integer">
+    select count(1)
+    from admin
+    where role_id=#{role_id}
+    and checked=0
+  </select>
+
 
   <!--<select id="searchByCondition" resultMap="SearchInfoMap">-->
     <!--select username,name,phone,checked,email-->
