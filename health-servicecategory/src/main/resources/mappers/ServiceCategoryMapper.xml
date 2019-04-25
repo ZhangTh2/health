@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="edu.zju.ccnt.healthservicecategory.dao.ServiceCategoryMapper">
-  <resultMap id="BaseResultMap" type="edu.zju.ccnt.healthservicecategory.model.ServiceCategory">
+<mapper namespace="edu.zju.ccnt.health.servicecategory.dao.ServiceCategoryMapper">
+  <resultMap id="BaseResultMap" type="edu.zju.ccnt.health.servicecategory.model.ServiceCategory">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="parent_id" jdbcType="INTEGER" property="parentId" />
@@ -23,7 +23,7 @@
     delete from service_category
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="edu.zju.ccnt.healthservicecategory.model.ServiceCategory">
+  <insert id="insert" parameterType="edu.zju.ccnt.health.servicecategory.model.ServiceCategory">
     insert into service_category (id, name, parent_id,level
       icon, gmt_create, gmt_modified
       )
@@ -31,7 +31,7 @@
       #{icon,jdbcType=VARCHAR}, #{gmtCreate,jdbcType=TIMESTAMP}, #{gmtModified,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="edu.zju.ccnt.healthservicecategory.model.ServiceCategory">
+  <insert id="insertSelective" parameterType="edu.zju.ccnt.health.servicecategory.model.ServiceCategory">
     insert into service_category
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -80,7 +80,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="edu.zju.ccnt.healthservicecategory.model.ServiceCategory">
+  <update id="updateByPrimaryKeySelective" parameterType="edu.zju.ccnt.health.servicecategory.model.ServiceCategory">
     update service_category
     <set>
       <if test="name != null">
@@ -104,7 +104,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="edu.zju.ccnt.healthservicecategory.model.ServiceCategory">
+  <update id="updateByPrimaryKey" parameterType="edu.zju.ccnt.health.servicecategory.model.ServiceCategory">
     update service_category
     set name = #{name,jdbcType=VARCHAR},
       parent_id = #{parentId,jdbcType=INTEGER},
