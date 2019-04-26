@@ -5,6 +5,7 @@ import edu.zju.ccnt.health.admin.response.ServerResponse;
 import edu.zju.ccnt.health.admin.vo.BaseInfoVo;
 import edu.zju.ccnt.health.admin.vo.DetailInfoVo;
 import edu.zju.ccnt.health.admin.vo.SearchInfoVo;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 import java.util.Map;
@@ -45,4 +46,19 @@ public interface IAdminService {
      * @return
      */
     ServerResponse<Map<String,Integer> > getUnchecked();
+
+    /**
+     * 将图片上传到ftp服务器
+     * @param uploadFile
+     * @return
+     */
+    ServerResponse insertImg( MultipartFile uploadFile);
+
+    /**
+     * 更新用户头像
+     * @param id
+     * @param imgUrl
+     * @return
+     */
+    ServerResponse updateAvata(Integer id,String imgUrl);
 }

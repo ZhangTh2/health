@@ -15,6 +15,7 @@ public class JwtInterceptor extends HandlerInterceptorAdapter {
         List restList = new ArrayList<String>();
         restList.add("/admin/insertAdmin");
         restList.add("/admin/checkName");
+        restList.add("/admin/insertImg");
         if (restList.contains(request.getRequestURI())) {
             return true;
         }

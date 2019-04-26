@@ -5,13 +5,18 @@ import edu.zju.ccnt.health.admin.model.Admin;
 import edu.zju.ccnt.health.admin.response.ServerResponse;
 import edu.zju.ccnt.health.admin.security.JwtUtil;
 import edu.zju.ccnt.health.admin.service.IAdminService;
+import edu.zju.ccnt.health.admin.utils.FtpUtils;
+import edu.zju.ccnt.health.admin.utils.ImageIdUtils;
 import edu.zju.ccnt.health.admin.vo.BaseInfoVo;
 import edu.zju.ccnt.health.admin.vo.DetailInfoVo;
 import edu.zju.ccnt.health.admin.vo.SearchInfoVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.InputStream;
 import java.sql.Timestamp;
 import java.util.*;
 
@@ -38,6 +43,7 @@ public class AdminServiceImpl implements IAdminService {
         baseInfoVo.setAdminId(admin.getId());
         baseInfoVo.setRole(admin.getRoleId());
         baseInfoVo.setUsername(admin.getUsername());
+        baseInfoVo.setAvatar(admin.getAvatar());
         log.info(baseInfoVo.toString());
         return ServerResponse.createBySuccess(baseInfoVo);
     }
@@ -170,4 +176,52 @@ public class AdminServiceImpl implements IAdminService {
 
     }
 
+    @Value("${ftp.host}")
+    private String host;
+    @Value("${ftp.port}")
+    private Integer port;
+    @Value("${ftp.username}")
+    private String username;
+    @Value("${ftp.password}")
+    private String password;
+    @Value("${ftp.basepath}")
+    private String basepath;
+    /**
+     * @param uploadFile
+     * @return 上传图片是否成功
+     */
+    public ServerResponse insertImg(MultipartFile uploadFile){
+        String oldName = uploadFile.getOriginalFilename();
+        log.info("上传图片"+oldName);
+        String imgName = ImageIdUtils.genImageName()+oldName.substring(oldName.lastIndexOf("."));
+        String filepath = new String("/adminAvatarImages");
+        String imgUrl = new String("http://192.168.12.110/images/adminAvatarImages/")+imgName;
+        try {
+            InputStream input = uploadFile.getInputStream();
+            boolean result = FtpUtils.uploadFile(host,port,username,password,basepath,filepath,imgName,input);
+            if(result) {
+                return ServerResponse.createBySuccess(imgUrl);
+            }
+            else return ServerResponse.createByErrorMessage("图片上传失败");
+        }catch (Exception e){
+            log.error(e.toString());
+            return ServerResponse.createByErrorMessage("图片上传失败");
+        }
+    }
+
+    /**
+     * 更新用户头像
+     * @param id
+     * @param imgUrl
+     * @return
+     */
+    public ServerResponse updateAvata(Integer id,String imgUrl){
+        try{
+            adminMapper.updateAvataById(id,imgUrl);
+            return ServerResponse.createBySuccess();
+        }catch (Exception e){
+            log.error(e.fillInStackTrace().toString());
+            return  ServerResponse.createByError();
+        }
+    }
 }

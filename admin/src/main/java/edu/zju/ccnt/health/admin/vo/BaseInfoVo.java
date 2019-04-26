@@ -13,4 +13,6 @@ public class BaseInfoVo {
     private String username;
 
     private Integer role;
+
+    private String avatar;
 }

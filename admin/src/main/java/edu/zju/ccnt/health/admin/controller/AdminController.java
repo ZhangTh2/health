@@ -7,6 +7,7 @@ import edu.zju.ccnt.health.admin.service.IAdminService;
 import jdk.nashorn.internal.ir.RuntimeNode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.ServletException;
 import javax.xml.crypto.Data;
@@ -144,6 +145,16 @@ public class AdminController {
     @RequestMapping(value = "/getUnckeck",method = RequestMethod.GET)
     public  ServerResponse getUnckeck(){
         return iAdminService.getUnchecked();
+    }
+
+    @RequestMapping(value="/insertImg",method = RequestMethod.POST)
+    public ServerResponse insertImg(@RequestBody MultipartFile file) {
+        return iAdminService.insertImg(file);
+    }
+
+    @RequestMapping(value = "/updateAvata",method = RequestMethod.GET)
+    public ServerResponse updateAvata(@RequestParam Integer id,@RequestParam String avatar) {
+        return iAdminService.updateAvata(id,avatar);
     }
 
 

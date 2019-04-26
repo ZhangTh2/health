@@ -88,4 +88,6 @@ public interface AdminMapper {
     //根据role获取未审核的管理员
     Integer getUnckeckedNumByRoleId(@Param("role_id")Integer roleId);
 
+    //更新用户头像
+    int updateAvataById(@Param("id")Integer id,@Param("imgUrl")String imgUrl);
 }
