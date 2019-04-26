@@ -94,7 +94,7 @@ public interface IServiceService {
     ServerResponse updateService(Service service);
 
     /**
-     * 新建服务-v2 现在用这个接口
+     * 新建服务-v2 现在用这个接口 应该根据创建服务的角色的不同设置checked，待改进
      * @param service
      * @return
      */

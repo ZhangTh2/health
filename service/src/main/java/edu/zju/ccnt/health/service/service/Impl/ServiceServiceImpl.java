@@ -64,9 +64,16 @@ public class ServiceServiceImpl implements IServiceService {
             BaseInfoVo baseInfoVo = new BaseInfoVo();
             baseInfoVo.setId(baseInfoDTO.getId());
             baseInfoVo.setServiceName(baseInfoDTO.getService_name());
-            baseInfoVo.setServiceCategory(iServiceCategoryFeign.getname(baseInfoDTO.getCategory_id()));
+            if(baseInfoDTO.getCategory_id()!=null) {
+//                logger.info("category_id是"+baseInfoDTO.getCategory_id());
+                baseInfoVo.setServiceCategory(iServiceCategoryFeign.getname(baseInfoDTO.getCategory_id()));
+            }else {
+//                logger.info("category是null");
+                baseInfoVo.setServiceCategory("");
+            }
             baseInfoVo.setChecked(baseInfoDTO.getChecked());
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss");
+            if(baseInfoDTO.getCreate_time()!=null)
             baseInfoVo.setCreateTime(sdf.format(baseInfoDTO.getCreate_time()));
             baseInfoVo.setOwner("ccnt实验室");
             baseInfoVoList.add(baseInfoVo);
@@ -110,6 +117,20 @@ public class ServiceServiceImpl implements IServiceService {
         }
     }
 
+    /**
+     * 这个暂时废弃
+     * @param type
+     * @param userId
+     * @param categoryId
+     * @param serviceName
+     * @param checked
+     * @param serviceImg
+     * @param price
+     * @param introduction
+     * @param detailintroduction
+     * @param format
+     * @return
+     */
     public ServerResponse<Integer> createService(Integer type,Integer userId,Integer categoryId,String serviceName, Integer checked,String serviceImg,BigDecimal price,String introduction,String detailintroduction,String format){
         logger.info("创建服务");
         Service service = new Service();
@@ -177,8 +198,9 @@ public class ServiceServiceImpl implements IServiceService {
     }
 
     public ServerResponse insertService(Service service){
-        logger.info("新建服务"+service.toString());
+        logger.info("新建服务");
         try {
+            service.setCreateTime(new Timestamp(System.currentTimeMillis()));
             int result = serviceMapper.insertSelective(service);
             return ServerResponse.createBySuccess();
         }catch (Exception e){

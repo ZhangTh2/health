@@ -152,7 +152,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>4.24/service</repository>
+                    <repository>4.26/service</repository>
                     <buildArgs>
                         <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
                     </buildArgs>
