@@ -245,7 +245,7 @@
 
   <select id="validateAdmin"  parameterType="java.lang.String" resultType="java.lang.Integer">
 
-    select count(1)
+    select id
     from admin
     where username=#{username} and password=#{password}
   </select>
