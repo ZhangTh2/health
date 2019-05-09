@@ -90,4 +90,5 @@ public interface AdminMapper {
 
     //更新用户头像
     int updateAvataById(@Param("id")Integer id,@Param("imgUrl")String imgUrl);
+
 }

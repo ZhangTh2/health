@@ -61,4 +61,12 @@ public interface IAdminService {
      * @return
      */
     ServerResponse updateAvata(Integer id,String imgUrl);
+
+    /**
+     * 超级管理员审核管理员不通过
+     * @param id
+     * @param remarks
+     * @return
+     */
+    ServerResponse uncheckAdmin(Integer id,String remarks);
 }

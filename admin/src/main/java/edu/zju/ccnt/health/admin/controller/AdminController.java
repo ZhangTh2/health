@@ -63,6 +63,11 @@ public class AdminController {
         return iAdminService.check(id);
     }
 
+    @RequestMapping(value = "/uncheckAdmin",method = RequestMethod.GET)
+    public ServerResponse uncheckAdmin(@RequestParam Integer id,String remarks) {
+        return iAdminService.uncheckAdmin(id,remarks);
+    }
+
     @RequestMapping(value = "/searchAdmin",method = RequestMethod.POST)
     public ServerResponse search(@RequestBody Map<String,String> query) {
         Integer role_id = Integer.valueOf(query.get("role_id"));

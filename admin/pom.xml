@@ -160,7 +160,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>hp/admin</repository>
+                    <repository>4.27/admin</repository>
                     <buildArgs>
                         <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
                     </buildArgs>

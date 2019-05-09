@@ -26,12 +26,24 @@ public class AdminServiceImpl implements IAdminService {
     @Autowired
     private AdminMapper adminMapper;
 
+    /**
+     *临时debug 登录待重写
+     */
     public ServerResponse<String> login(String username, String password) {
         log.info(username+"用户登录");
         Integer adminId = adminMapper.validateAdmin(username,password);
-        if(adminId==0) return ServerResponse.createByErrorMessage("用户名或密码错误");
+        if(adminId==null) return ServerResponse.createByErrorMessage("用户名或密码错误");
         else
-            return ServerResponse.createBySuccess(JwtUtil.getToken(String.valueOf(adminId)));
+        {
+            Admin admin = adminMapper.selectByPrimaryKey(adminId);
+            Integer checked = admin.getChecked();
+            if(checked==0)
+                return ServerResponse.createByErrorMessage("您的账号未被审核通过");
+            else if(checked==1) return ServerResponse.createBySuccess(JwtUtil.getToken(String.valueOf(adminId)));
+            else if(checked==2) return ServerResponse.createByErrorMessage("您已经不是本系统的管理员");
+            else if(checked==3) return ServerResponse.createByErrorMessage("您的账号审核未通过:"+admin.getRemarks());
+            else return ServerResponse.createByErrorMessage("未知错误");
+        }
     }
 
     //由Token获取管理员基本信息
@@ -218,6 +230,27 @@ public class AdminServiceImpl implements IAdminService {
     public ServerResponse updateAvata(Integer id,String imgUrl){
         try{
             adminMapper.updateAvataById(id,imgUrl);
+            return ServerResponse.createBySuccess();
+        }catch (Exception e){
+            log.error(e.fillInStackTrace().toString());
+            return  ServerResponse.createByError();
+        }
+    }
+
+    /**
+     * 超级管理员审核管理员不通过
+     * @param id
+     * @param remarks
+     * @return
+     */
+    public ServerResponse uncheckAdmin(Integer id,String remarks){
+        Admin admin = new Admin();
+        admin.setId(id);
+        admin.setRemarks(remarks);
+        admin.setChecked(3);
+        admin.setUpdateTime(new Timestamp(System.currentTimeMillis()));
+        try{
+            adminMapper.updateByPrimaryKeySelective(admin);
             return ServerResponse.createBySuccess();
         }catch (Exception e){
             log.error(e.fillInStackTrace().toString());
