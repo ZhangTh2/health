@@ -70,10 +70,8 @@ public class ServiceManageController {
         return iServiceService.insertService(service);
     }
 
-    @RequestMapping(value="/insertImg",method = RequestMethod.POST)
-    public ServerResponse insertImg(@RequestBody MultipartFile file) {
-        return iServiceService.insertImg(file);
-    }
+
+
 
     @RequestMapping(value="/updateChecked",method = RequestMethod.GET)
     public ServerResponse insertImg(@RequestParam Integer id,@RequestParam Integer checked) {

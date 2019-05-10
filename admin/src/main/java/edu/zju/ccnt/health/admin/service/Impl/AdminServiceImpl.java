@@ -31,8 +31,9 @@ public class AdminServiceImpl implements IAdminService {
      */
     public ServerResponse<String> login(String username, String password) {
         log.info(username+"用户登录");
-        Integer adminId = adminMapper.validateAdmin(username,password);
-        if(adminId==null) return ServerResponse.createByErrorMessage("用户名或密码错误");
+        Integer adminId = new Integer(0);
+        adminId = adminMapper.validateAdmin(username,password);
+        if(adminId==0) return ServerResponse.createByErrorMessage("用户名或密码错误");
         else
         {
             Admin admin = adminMapper.selectByPrimaryKey(adminId);
