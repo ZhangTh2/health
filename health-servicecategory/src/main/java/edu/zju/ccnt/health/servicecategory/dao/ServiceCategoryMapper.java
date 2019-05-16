@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface ServiceCategoryMapper {
     /**
-     *generator by mybatis
+     * generator by mybatis
      */
     int deleteByPrimaryKey(Integer id);
 
@@ -29,6 +29,7 @@ public interface ServiceCategoryMapper {
 
     /**
      * 假删除，将parent_id置为-1
+     *
      * @param id
      * @return 影响条数
      */

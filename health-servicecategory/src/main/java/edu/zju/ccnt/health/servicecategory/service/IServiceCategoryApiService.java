@@ -8,14 +8,12 @@ import java.util.List;
  */
 public interface IServiceCategoryApiService {
     /**
-     *
      * @param id
      * @return 该id下的所有子服务分类
      */
     List<Integer> getChildrenById(Integer id);
 
     /**
-     *
      * @param id
      * @return 服务分类名
      */

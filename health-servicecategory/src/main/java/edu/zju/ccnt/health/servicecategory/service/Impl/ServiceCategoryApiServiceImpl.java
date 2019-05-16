@@ -18,18 +18,18 @@ public class ServiceCategoryApiServiceImpl implements IServiceCategoryApiService
     @Autowired
     private ServiceCategoryMapper serviceCategoryMapper;
 
-    public List<Integer> getChildrenById(Integer id){
-        logger.info("查询"+id+"下的所有子分类");
+    public List<Integer> getChildrenById(Integer id) {
+        logger.info("查询" + id + "下的所有子分类");
         List<ServiceCategory> serviceCategoryList = serviceCategoryMapper.selectByParentId(id);
         List<Integer> list = new ArrayList<>();
-        for(ServiceCategory serviceCategory :serviceCategoryList){
+        for (ServiceCategory serviceCategory : serviceCategoryList) {
             list.add(serviceCategory.getId());
         }
         return list;
     }
 
-    public String getNameById(Integer id){
-        logger.info("查询"+id+"的分类名");
+    public String getNameById(Integer id) {
+        logger.info("查询" + id + "的分类名");
         ServiceCategory serviceCategory = serviceCategoryMapper.selectByPrimaryKey(id);
         return serviceCategory.getName();
     }

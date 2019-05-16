@@ -1,128 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="edu.zju.ccnt.health.servicecategory.dao.ServiceCategoryMapper">
-  <resultMap id="BaseResultMap" type="edu.zju.ccnt.health.servicecategory.model.ServiceCategory">
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="parent_id" jdbcType="INTEGER" property="parentId" />
-    <result column="level" jdbcType="INTEGER" property="level" />
-    <result column="icon" jdbcType="VARCHAR" property="icon" />
-    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
-    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified" />
-  </resultMap>
-  <sql id="Base_Column_List">
-    id, name, parent_id, level,icon, gmt_create, gmt_modified
-  </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from service_category
-    where id = #{id,jdbcType=INTEGER}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from service_category
-    where id = #{id,jdbcType=INTEGER}
-  </delete>
-  <insert id="insert" parameterType="edu.zju.ccnt.health.servicecategory.model.ServiceCategory">
-    insert into service_category (id, name, parent_id,level
-      icon, gmt_create, gmt_modified
-      )
-    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{parentId,jdbcType=INTEGER}, #{level,jdbcType=INTEGER}
-      #{icon,jdbcType=VARCHAR}, #{gmtCreate,jdbcType=TIMESTAMP}, #{gmtModified,jdbcType=TIMESTAMP}
-      )
-  </insert>
-  <insert id="insertSelective" parameterType="edu.zju.ccnt.health.servicecategory.model.ServiceCategory">
-    insert into service_category
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        id,
-      </if>
-      <if test="name != null">
-        name,
-      </if>
-      <if test="parentId != null">
-        parent_id,
-      </if>
-      <if test="level != null">
-        level,
-      </if>
-      <if test="icon != null">
-        icon,
-      </if>
-      <if test="gmtCreate != null">
-        gmt_create,
-      </if>
-      <if test="gmtModified != null">
-        gmt_modified,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        #{id,jdbcType=INTEGER},
-      </if>
-      <if test="name != null">
-        #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="parentId != null">
-        #{parentId,jdbcType=INTEGER},
-      </if>
-      <if test="level != null">
-        #{level,jdbcType=INTEGER},
-      </if>
-      <if test="icon != null">
-        #{icon,jdbcType=VARCHAR},
-      </if>
-      <if test="gmtCreate != null">
-        #{gmtCreate,jdbcType=TIMESTAMP},
-      </if>
-      <if test="gmtModified != null">
-        #{gmtModified,jdbcType=TIMESTAMP},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="edu.zju.ccnt.health.servicecategory.model.ServiceCategory">
-    update service_category
-    <set>
-      <if test="name != null">
-        name = #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="parentId != null">
+    <resultMap id="BaseResultMap" type="edu.zju.ccnt.health.servicecategory.model.ServiceCategory">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="parent_id" jdbcType="INTEGER" property="parentId"/>
+        <result column="level" jdbcType="INTEGER" property="level"/>
+        <result column="icon" jdbcType="VARCHAR" property="icon"/>
+        <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate"/>
+        <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, name, parent_id, level,icon, gmt_create, gmt_modified
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from service_category
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete from service_category
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="edu.zju.ccnt.health.servicecategory.model.ServiceCategory">
+        insert into service_category (id, name, parent_id,level
+        icon, gmt_create, gmt_modified
+        )
+        values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{parentId,jdbcType=INTEGER},
+        #{level,jdbcType=INTEGER}
+        #{icon,jdbcType=VARCHAR}, #{gmtCreate,jdbcType=TIMESTAMP}, #{gmtModified,jdbcType=TIMESTAMP}
+        )
+    </insert>
+    <insert id="insertSelective" parameterType="edu.zju.ccnt.health.servicecategory.model.ServiceCategory">
+        insert into service_category
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="name != null">
+                name,
+            </if>
+            <if test="parentId != null">
+                parent_id,
+            </if>
+            <if test="level != null">
+                level,
+            </if>
+            <if test="icon != null">
+                icon,
+            </if>
+            <if test="gmtCreate != null">
+                gmt_create,
+            </if>
+            <if test="gmtModified != null">
+                gmt_modified,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="parentId != null">
+                #{parentId,jdbcType=INTEGER},
+            </if>
+            <if test="level != null">
+                #{level,jdbcType=INTEGER},
+            </if>
+            <if test="icon != null">
+                #{icon,jdbcType=VARCHAR},
+            </if>
+            <if test="gmtCreate != null">
+                #{gmtCreate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="gmtModified != null">
+                #{gmtModified,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="edu.zju.ccnt.health.servicecategory.model.ServiceCategory">
+        update service_category
+        <set>
+            <if test="name != null">
+                name = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="parentId != null">
+                parent_id = #{parentId,jdbcType=INTEGER},
+            </if>
+            <if test="level != null">
+                level = #{level,jdbcType=INTEGER},
+            </if>
+            <if test="icon != null">
+                icon = #{icon,jdbcType=VARCHAR},
+            </if>
+            <if test="gmtCreate != null">
+                gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="gmtModified != null">
+                gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="edu.zju.ccnt.health.servicecategory.model.ServiceCategory">
+        update service_category
+        set name = #{name,jdbcType=VARCHAR},
         parent_id = #{parentId,jdbcType=INTEGER},
-      </if>
-      <if test="level != null">
         level = #{level,jdbcType=INTEGER},
-      </if>
-      <if test="icon != null">
         icon = #{icon,jdbcType=VARCHAR},
-      </if>
-      <if test="gmtCreate != null">
         gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
-      </if>
-      <if test="gmtModified != null">
-        gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},
-      </if>
-    </set>
-    where id = #{id,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="edu.zju.ccnt.health.servicecategory.model.ServiceCategory">
-    update service_category
-    set name = #{name,jdbcType=VARCHAR},
-      parent_id = #{parentId,jdbcType=INTEGER},
-      level = #{level,jdbcType=INTEGER},
-      icon = #{icon,jdbcType=VARCHAR},
-      gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
-      gmt_modified = #{gmtModified,jdbcType=TIMESTAMP}
-    where id = #{id,jdbcType=INTEGER}
-  </update>
-  <select id="selectByParentId" parameterType="java.lang.Integer"  resultMap="BaseResultMap">
-    select
-    <include refid="Base_Column_List" />
-    from service_category
-    where parent_id = #{parent_id,jdbcType=INTEGER}
-  </select>
-  <update id="removeById" parameterType="java.lang.Integer">
-    update service_category
-    set parent_id = -1
-    where id = #{id,jdbcType=INTEGER}
-  </update>
+        gmt_modified = #{gmtModified,jdbcType=TIMESTAMP}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <select id="selectByParentId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from service_category
+        where parent_id = #{parent_id,jdbcType=INTEGER}
+    </select>
+    <update id="removeById" parameterType="java.lang.Integer">
+        update service_category
+        set parent_id = -1
+        where id = #{id,jdbcType=INTEGER}
+    </update>
 </mapper>

@@ -17,17 +17,16 @@ public class ServiceCategoryApiController {
     private IServiceCategoryApiService iServiceCategoryApiService;
 
     /**
-     *
      * @param id
      * @return
      */
-    @RequestMapping(value = "/getsubcategory",method = RequestMethod.GET)
+    @RequestMapping(value = "/getsubcategory", method = RequestMethod.GET)
     public List<Integer> getsubcategory(@RequestParam Integer id) {
-        return  iServiceCategoryApiService.getChildrenById(id);
+        return iServiceCategoryApiService.getChildrenById(id);
     }
 
-    @RequestMapping(value = "/getname",method = RequestMethod.GET)
+    @RequestMapping(value = "/getname", method = RequestMethod.GET)
     public String getname(@RequestParam Integer id) {
-        return  iServiceCategoryApiService.getNameById(id);
+        return iServiceCategoryApiService.getNameById(id);
     }
 }

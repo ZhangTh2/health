@@ -19,27 +19,30 @@ public interface IServiceCategoryService {
     /**
      * @return 服务添加管理页面的战术数据
      */
-    ServerResponse<List<ServiceVo> > listcategoriesTwo();
+    ServerResponse<List<ServiceVo>> listcategoriesTwo();
 
     /**
      * 更新服务分类
+     *
      * @param id
      * @param name
      * @return 状态码
      */
-    ServerResponse update(Integer id,String name);
+    ServerResponse update(Integer id, String name);
 
     /**
      * 添加子服务分类
+     *
      * @param parentId
      * @param name
      * @param level
      * @return 状态码
      */
-    ServerResponse create(Integer parentId,String name,Integer level);
+    ServerResponse create(Integer parentId, String name, Integer level);
 
     /**
      * 删除服务分类
+     *
      * @param id
      * @return 状态码
      */
@@ -47,6 +50,7 @@ public interface IServiceCategoryService {
 
     /**
      * 添加大的服务分类
+     *
      * @param name
      * @return status
      */
