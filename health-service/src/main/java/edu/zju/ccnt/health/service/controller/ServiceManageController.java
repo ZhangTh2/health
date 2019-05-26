@@ -96,4 +96,9 @@ public class ServiceManageController {
         return iServiceService.getUncheck();
     }
 
+    @RequestMapping(value = "/insertImg", method = RequestMethod.POST)
+    public ServerResponse insertImg(@RequestBody MultipartFile file) {
+        return iServiceService.insertImg(file);
+    }
+
 }
