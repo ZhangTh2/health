@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="health-center" />
+        <module name="health-common" />
+        <module name="health-config" />
+        <module name="health-provider-admin" />
+        <module name="health-provider-api" />
+        <module name="health-provider-service" />
+        <module name="health-provider-service-api" />
+        <module name="health-provider-service-category" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="health" target="1.8" />
+      <module name="health-center" target="1.8" />
+      <module name="health-common" target="1.8" />
+      <module name="health-config" target="1.8" />
+      <module name="health-provider" target="1.8" />
+      <module name="health-provider-admin" target="1.8" />
+      <module name="health-provider-api" target="1.8" />
+      <module name="health-provider-service" target="1.8" />
+      <module name="health-provider-service-api" target="1.8" />
+      <module name="health-provider-service-category" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="health-center" options="-parameters" />
+      <module name="health-common" options="-parameters" />
+      <module name="health-config" options="-parameters" />
+      <module name="health-provider" options="" />
+      <module name="health-provider-admin" options="-parameters" />
+      <module name="health-provider-api" options="-parameters" />
+    </option>
+  </component>
+</project>

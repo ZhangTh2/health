@@ -3,6 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/health.iml" filepath="$PROJECT_DIR$/.idea/health.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health-center/health-center.iml" filepath="$PROJECT_DIR$/health-center/health-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health-common/health-common.iml" filepath="$PROJECT_DIR$/health-common/health-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health-config/health-config.iml" filepath="$PROJECT_DIR$/health-config/health-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health-provider/health-provider.iml" filepath="$PROJECT_DIR$/health-provider/health-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health-provider/health-provider-admin/health-provider-admin.iml" filepath="$PROJECT_DIR$/health-provider/health-provider-admin/health-provider-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health-provider-api/health-provider-api.iml" filepath="$PROJECT_DIR$/health-provider-api/health-provider-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health-provider/health-provider-service/health-provider-service.iml" filepath="$PROJECT_DIR$/health-provider/health-provider-service/health-provider-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health-provider/health-provider-service-api/health-provider-service-api.iml" filepath="$PROJECT_DIR$/health-provider/health-provider-service-api/health-provider-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health-provider/health-provider-service-category/health-provider-service-category.iml" filepath="$PROJECT_DIR$/health-provider/health-provider-service-category/health-provider-service-category.iml" />
     </modules>
   </component>
 </project>

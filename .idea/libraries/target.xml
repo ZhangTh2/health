@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="target">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/health-provider/health-provider-admin/target/health-admin-0.0.1-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/health-provider/health-provider-admin/target/health-admin-0.0.1-SNAPSHOT-docker-info.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
