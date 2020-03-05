@@ -6,12 +6,14 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/healthprovider/pom.xml" />
-        <option value="$PROJECT_DIR$/health-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/health-center/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/health-provider-api/pom.xml" />
-        <option value="$PROJECT_DIR$/health-center1/pom.xml" />
+        <option value="$PROJECT_DIR$/health-common/pom.xml" />
         <option value="$PROJECT_DIR$/health-provider/health-provider-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-service-category/pom.xml" />
+        <option value="$PROJECT_DIR$/health-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/health-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/health-monitor/pom.xml" />
       </list>
     </option>
   </component>

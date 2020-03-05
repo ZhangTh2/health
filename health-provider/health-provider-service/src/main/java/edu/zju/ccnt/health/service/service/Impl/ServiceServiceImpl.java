@@ -1,12 +1,13 @@
 package edu.zju.ccnt.health.service.service.Impl;
 
+import edu.zju.ccnt.health.provider.service.IServiceCategoryFeignApi;
 import edu.zju.ccnt.health.service.service.IServiceService;
+import edu.zju.ccnt.health.service.service.ServiceCategoryRpcService;
 import edu.zju.ccnt.health.service.vo.BaseInfoVo;
 import edu.zju.ccnt.health.service.vo.SearchInfoVo;
 import edu.zju.ccnt.health.service.dao.ServiceMapper;
 import edu.zju.ccnt.health.service.dto.BaseInfoDTO;
 import edu.zju.ccnt.health.service.response.ServerResponse;
-import edu.zju.ccnt.health.service.service.IServiceCategoryFeign;
 import edu.zju.ccnt.health.service.utils.FtpUtils;
 import edu.zju.ccnt.health.service.utils.ImageIdUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -17,6 +18,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.annotation.Resource;
 import java.io.InputStream;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
@@ -35,11 +37,11 @@ import java.util.Map;
 public class ServiceServiceImpl implements IServiceService {
     private static final Logger logger = LoggerFactory.getLogger(ServiceServiceImpl.class);
 
-    @Autowired
+    @Resource
     private ServiceMapper serviceMapper;
 
-    @Autowired
-    private IServiceCategoryFeign iServiceCategoryFeign;
+    @Resource
+    private ServiceCategoryRpcService serviceCategoryRpcService;
 
     /**
      * @param type
@@ -55,7 +57,7 @@ public class ServiceServiceImpl implements IServiceService {
         logger.info("查询服务列表");
         List<Integer> categoryids ;
         if (categoryId == -1) categoryids = new ArrayList<>();
-        else categoryids = iServiceCategoryFeign.getsubcategory(categoryId);
+        else categoryids = serviceCategoryRpcService.getsubcategory(categoryId);
         List<BaseInfoDTO> baseInfoDTOList = serviceMapper.searchByCondition(type, categoryids, serviceName, checked, sort, page, limit);
         SearchInfoVo searchInfoVo = new SearchInfoVo();
         List<BaseInfoVo> baseInfoVoList = new ArrayList<>();
@@ -65,7 +67,7 @@ public class ServiceServiceImpl implements IServiceService {
             baseInfoVo.setServiceName(baseInfoDTO.getService_name());
             if (baseInfoDTO.getCategory_id() != null) {
 //                logger.info("category_id是"+baseInfoDTO.getCategory_id());
-                baseInfoVo.setServiceCategory(iServiceCategoryFeign.getname(baseInfoDTO.getCategory_id()));
+                baseInfoVo.setServiceCategory(serviceCategoryRpcService.getname(baseInfoDTO.getCategory_id()));
             } else {
 //                logger.info("category是null");
                 baseInfoVo.setServiceCategory("");

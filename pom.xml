@@ -22,6 +22,8 @@
         <module>health-config</module>
         <module>health-provider</module>
         <module>health-provider-api</module>
+        <module>health-hystrix</module>
+        <module>health-monitor</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

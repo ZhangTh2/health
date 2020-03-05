@@ -1,0 +1,2 @@
+edu\zju\ccnt\health\provider\service\IServiceCategoryFeignApi.class
+edu\zju\ccnt\health\provider\service\hystrix\ServiceCategoryFeignHystrix.class

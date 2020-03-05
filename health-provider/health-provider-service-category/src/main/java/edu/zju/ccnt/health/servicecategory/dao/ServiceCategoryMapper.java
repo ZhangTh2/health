@@ -1,10 +1,14 @@
 package edu.zju.ccnt.health.servicecategory.dao;
 
 import edu.zju.ccnt.health.servicecategory.model.ServiceCategory;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
+@Mapper
 public interface ServiceCategoryMapper {
     /**
      * generator by mybatis

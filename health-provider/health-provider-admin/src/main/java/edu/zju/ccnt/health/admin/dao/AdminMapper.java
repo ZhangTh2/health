@@ -5,10 +5,12 @@ import edu.zju.ccnt.health.admin.vo.DetailInfoVo;
 import edu.zju.ccnt.health.admin.vo.SearchInfoVo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
+@Component
 @Mapper
 public interface AdminMapper {
     /**

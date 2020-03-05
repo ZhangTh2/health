@@ -10,8 +10,8 @@
     <artifactId>health-provider-admin</artifactId>
     <version>1.0</version>
     <name>health-provider-admin</name>
-    <description>admin manage moudle in health-platform</description>
-
+    <description>admin manage module in health-platform</description>
+    <packaging>jar</packaging>
 
 
 

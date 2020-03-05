@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/health-center" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/health-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/health-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/health-hystrix" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/health-monitor" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/health-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/health-provider-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/health-provider-api/health-provider-service-category-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/health-provider/health-provider-admin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/health-provider/health-provider-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/health-provider/health-provider-service-api" charset="UTF-8" />

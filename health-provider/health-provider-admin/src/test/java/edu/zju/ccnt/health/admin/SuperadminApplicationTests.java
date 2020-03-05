@@ -20,19 +20,10 @@ import org.springframework.web.context.WebApplicationContext;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@AutoConfigureMockMvc
 public class SuperadminApplicationTests {
 
-    @Autowired
-    private MockMvc mockMvc;
-
     @Test
-    public void getTotal() throws  Exception{
-        mockMvc.perform(MockMvcRequestBuilders.get("/admin/getTotal"))
-                .andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(MockMvcResultMatchers.jsonPath("status").value("20000"))
-                .andDo(MockMvcResultHandlers.print())
-                .andReturn();
+    public void contextLoads() {
     }
 }
 

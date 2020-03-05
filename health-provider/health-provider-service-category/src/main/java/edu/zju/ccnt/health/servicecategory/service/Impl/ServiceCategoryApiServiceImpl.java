@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +16,7 @@ import java.util.List;
 public class ServiceCategoryApiServiceImpl implements IServiceCategoryApiService {
     private static final Logger logger = LoggerFactory.getLogger(ServiceCategoryImpl.class);
 
-    @Autowired
+    @Resource
     private ServiceCategoryMapper serviceCategoryMapper;
 
     public List<Integer> getChildrenById(Integer id) {

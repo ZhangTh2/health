@@ -13,6 +13,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableHystrix
 @EnableDiscoveryClient
 @SpringBootApplication
+
+
 public class AdminApplication {
 
     public static void main(String[] args) {
