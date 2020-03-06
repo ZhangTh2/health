@@ -1,20 +1,14 @@
 package edu.zju.ccnt.health.admin.controller;
 
-import edu.zju.ccnt.health.admin.model.Admin;
-import edu.zju.ccnt.health.admin.response.ServerResponse;
-import edu.zju.ccnt.health.admin.security.JwtUtil;
+import edu.zju.ccnt.health.admin.model.domin.Admin;
 import edu.zju.ccnt.health.admin.service.IAdminService;
-import jdk.nashorn.internal.ir.RuntimeNode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.servlet.ServletException;
-import javax.xml.crypto.Data;
-import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.Map;
-
+import edu.zju.ccnt.health.response.ServerResponse;
 @RestController
 @RequestMapping("/admin")
 public class AdminController {

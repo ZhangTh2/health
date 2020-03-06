@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/health.iml" filepath="$PROJECT_DIR$/.idea/health.iml" />
       <module fileurl="file://$PROJECT_DIR$/health-center/health-center.iml" filepath="$PROJECT_DIR$/health-center/health-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/health-common/health-common.iml" filepath="$PROJECT_DIR$/health-common/health-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/health-common/health-common-utils/health-common-utils.iml" filepath="$PROJECT_DIR$/health-common/health-common-utils/health-common-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/health-config/health-config.iml" filepath="$PROJECT_DIR$/health-config/health-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/health-hystrix/health-hystrix.iml" filepath="$PROJECT_DIR$/health-hystrix/health-hystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/health-master.iml" filepath="$PROJECT_DIR$/.idea/health-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/health-monitor/health-monitor.iml" filepath="$PROJECT_DIR$/health-monitor/health-monitor.iml" />
       <module fileurl="file://$PROJECT_DIR$/health-provider/health-provider.iml" filepath="$PROJECT_DIR$/health-provider/health-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/health-provider/health-provider-admin/health-provider-admin.iml" filepath="$PROJECT_DIR$/health-provider/health-provider-admin/health-provider-admin.iml" />

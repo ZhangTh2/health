@@ -1,7 +1,7 @@
 package edu.zju.ccnt.health.service.dao;
 
-import edu.zju.ccnt.health.service.dto.BaseInfoDTO;
-import edu.zju.ccnt.health.service.model.Service;
+import edu.zju.ccnt.health.service.model.dto.BaseInfoDTO;
+import edu.zju.ccnt.health.service.model.domin.Service;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;

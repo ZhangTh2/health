@@ -1,6 +1,6 @@
 package edu.zju.ccnt.health.servicecategory.dao;
 
-import edu.zju.ccnt.health.servicecategory.model.ServiceCategory;
+import edu.zju.ccnt.health.servicecategory.model.domin.ServiceCategory;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;

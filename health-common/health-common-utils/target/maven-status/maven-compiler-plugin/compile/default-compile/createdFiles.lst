@@ -1,0 +1,4 @@
+edu\zju\ccnt\health\ftp\ImageIdUtils.class
+edu\zju\ccnt\health\ftp\FtpUtils.class
+edu\zju\ccnt\health\response\ResponseCode.class
+edu\zju\ccnt\health\response\ServerResponse.class

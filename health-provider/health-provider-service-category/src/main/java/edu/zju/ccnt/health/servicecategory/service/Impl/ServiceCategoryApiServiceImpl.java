@@ -1,11 +1,10 @@
 package edu.zju.ccnt.health.servicecategory.service.Impl;
 
 import edu.zju.ccnt.health.servicecategory.dao.ServiceCategoryMapper;
-import edu.zju.ccnt.health.servicecategory.model.ServiceCategory;
+import edu.zju.ccnt.health.servicecategory.model.domin.ServiceCategory;
 import edu.zju.ccnt.health.servicecategory.service.IServiceCategoryApiService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

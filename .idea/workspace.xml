@@ -48,6 +48,7 @@
     <ignored path="$PROJECT_DIR$/health-provider/health-provider-admin/target/" />
     <ignored path="$PROJECT_DIR$/health-provider-api/health-provider-service-category-api/target/" />
     <ignored path="$PROJECT_DIR$/health-hystrix/target/" />
+    <ignored path="$PROJECT_DIR$/health-common/health-common-utils/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,33 +72,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health-hystrix/pom.xml">
+        <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/HealthServicecategoryApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/dao/AdminMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
-              <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health-hystrix/mvnw.cmd">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health-hystrix/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="72" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health-hystrix/src/main/java/edu/zju/ccnt/health/HealthHystrixApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,19 +93,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health-monitor/pom.xml">
+        <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/service/IAdminService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+            <state relative-caret-position="-1034">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health-monitor/src/main/java/edu/zju/ccnt/health/HealthMonitorApplication.java">
+        <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/dao/ServiceMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/service/ServiceCategoryRpcService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,23 +126,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health-center/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/service/IServiceService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1035">
+              <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health-common/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/service/Impl/ApiServiceServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health-provider-api/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/service/IApiService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-238">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/service/IServiceCategoryApiService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/service/IServiceCategoryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -163,10 +199,12 @@
       <find>Tests</find>
       <find>health-center</find>
       <find>health-admin</find>
+      <find>com.fasterxml.jackson</find>
     </findStrings>
     <dirStrings>
       <dir>E:\health\health-provider\health-admin</dir>
       <dir>E:\health\health-provider\health-provider-admin</dir>
+      <dir>I:\health-master</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -175,32 +213,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/health-center1/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/health-center1/src/main/resources/bootstrap.properties" />
-        <option value="$PROJECT_DIR$/health-config/pom.xml" />
-        <option value="$PROJECT_DIR$/health-config/src/main/java/edu/zju/ccnt/health/HealthConfigApplication.java" />
-        <option value="$PROJECT_DIR$/health-config/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/health-center1/pom.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/health-center/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/health-center/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/health-center/src/main/java/edu/zju/ccnt/health/HealthCenter1Application.java" />
-        <option value="$PROJECT_DIR$/health-center/src/test/java/edu/zju/ccnt/health/HealthCenter1ApplicationTests.java" />
-        <option value="$PROJECT_DIR$/health-center/src/test/java/edu/zju/ccnt/health/HealthCenterApplicationTests.java" />
-        <option value="$PROJECT_DIR$/health-center/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/health-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/health-provider/health-provider-admin/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/health-provider/health-provider-admin/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/health-center/src/main/resources/bootstrap.properties" />
-        <option value="$PROJECT_DIR$/health-center/.gitignore" />
-        <option value="$PROJECT_DIR$/health-center/pom.xml" />
-        <option value="$PROJECT_DIR$/health-provider/health-provider-admin/src/test/java/edu/zju/ccnt/health/admin/SuperadminApplicationTests.java" />
-        <option value="$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/AdminApplication.java" />
-        <option value="$PROJECT_DIR$/health-provider/health-provider-admin/pom.xml" />
-        <option value="$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/service/IServiceCategoryFeign.java" />
-        <option value="$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/ServiceApplication.java" />
-        <option value="$PROJECT_DIR$/health-provider/health-provider-service-api/pom.xml" />
-        <option value="$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/ApiApplication.java" />
         <option value="$PROJECT_DIR$/health-provider/health-provider-service/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/dao/AdminMapper.java" />
         <option value="$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/dao/ServiceMapper.java" />
@@ -219,13 +231,39 @@
         <option value="$PROJECT_DIR$/health-provider-api/health-provider-service-category-api/src/main/java/edu/zju/ccnt/health/provider/service/hystrix/ServiceCategoryFeignHystrix.java" />
         <option value="$PROJECT_DIR$/health-provider/health-provider-service/pom.xml" />
         <option value="$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/service/ServiceCategoryRpcService.java" />
-        <option value="$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/service/Impl/ServiceServiceImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/health-hystrix/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/health-hystrix/pom.xml" />
         <option value="$PROJECT_DIR$/health-hystrix/src/main/java/edu/zju/ccnt/health/HealthHystrixApplication.java" />
         <option value="$PROJECT_DIR$/health-monitor/pom.xml" />
         <option value="$PROJECT_DIR$/health-monitor/src/main/java/edu/zju/ccnt/health/HealthMonitorApplication.java" />
+        <option value="$PROJECT_DIR$/health-common/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/health-common/health-common-utils/src/main/java/edu.zju.ccnt.health/response/ResponseCode.java" />
+        <option value="$PROJECT_DIR$/health-common/health-common-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/health-common/health-common-utils/src/main/java/edu.zju.ccnt.health/response/ServerResponse.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/service/IAdminService.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/health-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/controller/ServiceManageController.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/service/IServiceService.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/service/Impl/ServiceServiceImpl.java" />
+        <option value="$PROJECT_DIR$/health-common/health-common-utils/src/main/java/edu.zju.ccnt.health/ftp/FtpUtils.java" />
+        <option value="$PROJECT_DIR$/health-common/health-common-utils/src/main/java/edu.zju.ccnt.health/ftp/ImageIdUtils.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/service/Impl/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/controller/ApiManageController.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/service/IApiService.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/service/Impl/ApiServiceServiceImpl.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/controller/frontend/ServiceCategoryController.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/service/IServiceCategoryService.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/service/Impl/ServiceCategoryImpl.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/model/Admin.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/model/Api.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/model/ServiceCategory.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/model/vo/DetailInfoVo.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/model/Service.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/model/domin/Service.java" />
+        <option value="$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/model/domin/ServiceCategory.java" />
       </list>
     </option>
   </component>
@@ -234,21 +272,21 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="health-hystrix" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="health-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="health-hystrix" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="health-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="health-monitor" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="health-provider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="health-monitor" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="health-provider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -266,8 +304,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,12 +313,257 @@
             </path>
             <path>
               <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="Impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service-category" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service-category" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service-category" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service-category" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service-category" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="servicecategory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="health-master" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="health-provider-service-category" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="servicecategory" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="health-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,8 +574,8 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/health/health-api/src/main/resources/application.properties" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583417149095" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/health-monitor" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583505264668" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -303,17 +584,20 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="I:\health-master" />
-      <recent name="I:\health-master\health-provider-api" />
-      <recent name="I:\health-master\health-common" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\health-master\health-common\health-common-utils\src\main\java\edu.zju.ccnt.health" />
+      <recent name="E:\health\health-provider" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="edu.zju.ccnt.health.provider.service" />
       <recent name="edu.zju.ccnt.health.provider.service.Impl" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\health\health-provider" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\health-master\health-common\health-common-utils\src\main\java\edu.zju.ccnt.health" />
+      <recent name="I:\health-master\health-common\health-common-utils\src\main\java" />
+      <recent name="I:\health-master\health-provider" />
+      <recent name="I:\health-master" />
+      <recent name="I:\health-master\health-provider-api" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -516,6 +800,7 @@
       <item itemvalue="Application.HealthCenterApplication" />
       <item itemvalue="Application.AdminApplication" />
       <item itemvalue="JUnit.HealthCenterApplicationTests" />
+      <item itemvalue="JUnit.edu.zju.ccnt.health.api.dao in health-provider-service-api" />
       <item itemvalue="Spring Boot.HealthConfigApplication" />
       <item itemvalue="Spring Boot.HealthCenter1Application" />
       <item itemvalue="Spring Boot.HealthCenter2Application" />
@@ -523,10 +808,9 @@
       <item itemvalue="Spring Boot.ServiceApplication" />
       <item itemvalue="Spring Boot.ApiApplication" />
       <item itemvalue="Spring Boot.AdminApplication" />
-      <item itemvalue="Spring Boot.HealthCenterApplication" />
-      <item itemvalue="JUnit.edu.zju.ccnt.health.api.dao in health-provider-service-api" />
       <item itemvalue="Spring Boot.HealthHystrixApplication" />
       <item itemvalue="Spring Boot.HealthMonitorApplication" />
+      <item itemvalue="Spring Boot.HealthCenterApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -563,7 +847,9 @@
       <workItem from="1583326992475" duration="5357000" />
       <workItem from="1583391490430" duration="1157000" />
       <workItem from="1583393488989" duration="6238000" />
-      <workItem from="1583408175818" duration="8870000" />
+      <workItem from="1583408175818" duration="10066000" />
+      <workItem from="1583468450843" duration="286000" />
+      <workItem from="1583472033087" duration="7216000" />
     </task>
     <servers />
   </component>
@@ -582,12 +868,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64220000" />
+    <option name="totallyTimeSpent" value="72918000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21321961" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24840085" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -596,8 +883,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.81396586" visible="true" weight="0.15276273" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.032502707" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.81396586" weight="0.5048754" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -621,7 +908,7 @@
       <window_info anchor="right" id="Database" order="7" weight="0.32995737" />
       <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.29637527" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.32995737" />
-      <window_info anchor="right" id="Maven" order="10" visible="true" weight="0.3075693" />
+      <window_info anchor="right" id="Maven" order="10" visible="true" weight="0.14978679" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -637,21 +924,331 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/health-master.iml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/health-common/health-common-utils/src/main/java/edu.zju.ccnt.health/response/ServerResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/security/JwtInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/security/JwtUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/security/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="129" column="21" selection-start-line="129" selection-start-column="21" selection-end-line="129" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/controller/ServiceManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-common/health-common-utils/src/main/java/edu.zju.ccnt.health/response/ResponseCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/service/Impl/AdminServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-943">
+          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/controller/ApiManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-481">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/controller/rpc/ServiceCategoryApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-113">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/service/Impl/ServiceCategoryApiServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/service/Impl/ServiceCategoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/controller/frontend/ServiceCategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider-api/health-provider-service-category-api/src/main/java/edu/zju/ccnt/health/provider/service/IServiceCategoryFeignApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider-api/health-provider-service-category-api/src/main/java/edu/zju/ccnt/health/provider/service/hystrix/ServiceCategoryFeignHystrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-monitor/src/main/java/edu/zju/ccnt/health/HealthMonitorApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-common/health-common-utils/src/main/java/edu.zju.ccnt.health/ftp/FtpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-common/health-common-utils/src/main/java/edu.zju.ccnt.health/ftp/ImageIdUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/model/vo/DetailInfoVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/model/domin/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/model/vo/BaseInfoVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/model/vo/SearchInfoVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/resources/mappers/AdminMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1518">
+          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/service/Impl/ServiceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="887">
+          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/model/domin/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/model/dto/BaseInfoDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/model/vo/BaseInfoVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/model/vo/SearchInfoVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/resources/mappers/ServiceMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4347" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/model/domin/Api.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/resources/mappers/ApiMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1932" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/model/domin/ServiceCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/AdminApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/ServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/ApiApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/HealthServicecategoryApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/dao/AdminMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -660,342 +1257,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/service/IAdminService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="-1034">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/controller/ApiManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/service/IApiService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/service/Impl/ApiServiceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-483">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/exp/GlobalExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/java/edu/zju/ccnt/health/admin/dao/AdminMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/dao/ServiceMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/dao/ApiBaseInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/dao/ApiMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/dao/ServiceCategoryMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/controller/frontend/ServiceCategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/controller/rpc/ServiceCategoryApiController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider-api/health-provider-service-category-api/health-provider-service-category-api.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/service/IServiceCategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/service/IServiceCategoryApiService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/service/Impl/ServiceCategoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider-api/health-provider-service-category-api/src/main/java/edu/zju/ccnt/health/provider/service/IServiceCategoryApiService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider-api/health-provider-service-category-api/src/main/java/edu/zju/ccnt/health/provider/service/Impl/ServiceCategoryApiServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider-api/health-provider-service-category-api/src/main/java/edu/zju/ccnt/health/provider/service/hystrix/ServiceCategoryFeignHystrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider-api/health-provider-service-category-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/service/IServiceCategoryFeign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/service/Impl/ServiceCategoryApiServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider-api/health-provider-service-category-api/src/main/java/edu/zju/ccnt/health/provider/service/IServiceCategoryFeignApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/controller/ServiceManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/service/ServiceCategoryRpcService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="345">
           <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/service/IServiceService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service/src/main/java/edu/zju/ccnt/health/service/service/Impl/ServiceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1587">
-          <caret line="69" column="71" selection-start-line="69" selection-start-column="71" selection-end-line="69" selection-end-column="71" />
+        <state relative-caret-position="1035">
+          <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/pom.xml">
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/service/Impl/ApiServiceServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2530">
-          <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+        <state relative-caret-position="289">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/health-center/src/main/java/edu/zju/ccnt/health/HealthCenterApplication.java">
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-api/src/main/java/edu/zju/ccnt/health/api/service/IApiService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/service/IServiceCategoryApiService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-service-category/src/main/java/edu/zju/ccnt/health/servicecategory/service/IServiceCategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-center/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-center/src/main/resources/bootstrap.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-center/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider/health-provider-admin/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-hystrix/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="72" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-hystrix/mvnw.cmd">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-hystrix/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-hystrix/src/main/java/edu/zju/ccnt/health/HealthHystrixApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-monitor/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-monitor/src/main/java/edu/zju/ccnt/health/HealthMonitorApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-center/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-common/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health-provider-api/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
@@ -1049,7 +1381,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>health (1) (edu.zju.ccnt)</last-edited>
+          <last-edited>health-provider-service-api</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

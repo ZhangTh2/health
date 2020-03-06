@@ -8,7 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="health-center" />
-        <module name="health-common" />
+        <module name="health-common-utils" />
         <module name="health-config" />
         <module name="health-hystrix" />
         <module name="health-monitor" />
@@ -20,12 +20,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="health" target="1.8" />
       <module name="health-center" target="1.8" />
       <module name="health-common" target="1.8" />
+      <module name="health-common-utils" target="1.8" />
       <module name="health-config" target="1.8" />
       <module name="health-hystrix" target="1.8" />
-      <module name="health-master" target="1.5" />
+      <module name="health-master" target="1.8" />
       <module name="health-monitor" target="1.8" />
       <module name="health-provider" target="1.8" />
       <module name="health-provider-admin" target="1.8" />
@@ -39,7 +39,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="health-center" options="-parameters" />
-      <module name="health-common" options="-parameters" />
+      <module name="health-common" options="" />
+      <module name="health-common-utils" options="-parameters" />
       <module name="health-config" options="-parameters" />
       <module name="health-hystrix" options="-parameters" />
       <module name="health-monitor" options="-parameters" />

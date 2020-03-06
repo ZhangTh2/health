@@ -1,6 +1,6 @@
 package edu.zju.ccnt.health.api.dao;
 
-import edu.zju.ccnt.health.api.model.Api;
+import edu.zju.ccnt.health.api.model.domin.Api;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;

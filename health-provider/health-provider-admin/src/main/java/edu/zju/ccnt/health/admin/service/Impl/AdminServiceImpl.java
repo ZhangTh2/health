@@ -1,15 +1,15 @@
 package edu.zju.ccnt.health.admin.service.Impl;
 
 import edu.zju.ccnt.health.admin.dao.AdminMapper;
-import edu.zju.ccnt.health.admin.model.Admin;
-import edu.zju.ccnt.health.admin.response.ServerResponse;
+import edu.zju.ccnt.health.admin.model.domin.Admin;
+import edu.zju.ccnt.health.response.ServerResponse;
 import edu.zju.ccnt.health.admin.security.JwtUtil;
 import edu.zju.ccnt.health.admin.service.IAdminService;
-import edu.zju.ccnt.health.admin.utils.FtpUtils;
-import edu.zju.ccnt.health.admin.utils.ImageIdUtils;
-import edu.zju.ccnt.health.admin.vo.BaseInfoVo;
-import edu.zju.ccnt.health.admin.vo.DetailInfoVo;
-import edu.zju.ccnt.health.admin.vo.SearchInfoVo;
+import edu.zju.ccnt.health.ftp.FtpUtils;
+import edu.zju.ccnt.health.ftp.ImageIdUtils;
+import edu.zju.ccnt.health.admin.model.vo.BaseInfoVo;
+import edu.zju.ccnt.health.admin.model.vo.DetailInfoVo;
+import edu.zju.ccnt.health.admin.model.vo.SearchInfoVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

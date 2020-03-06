@@ -1,10 +1,10 @@
 package edu.zju.ccnt.health.admin.service;
 
-import edu.zju.ccnt.health.admin.model.Admin;
-import edu.zju.ccnt.health.admin.response.ServerResponse;
-import edu.zju.ccnt.health.admin.vo.BaseInfoVo;
-import edu.zju.ccnt.health.admin.vo.DetailInfoVo;
-import edu.zju.ccnt.health.admin.vo.SearchInfoVo;
+import edu.zju.ccnt.health.admin.model.domin.Admin;
+import edu.zju.ccnt.health.response.ServerResponse;
+import edu.zju.ccnt.health.admin.model.vo.BaseInfoVo;
+import edu.zju.ccnt.health.admin.model.vo.DetailInfoVo;
+import edu.zju.ccnt.health.admin.model.vo.SearchInfoVo;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;

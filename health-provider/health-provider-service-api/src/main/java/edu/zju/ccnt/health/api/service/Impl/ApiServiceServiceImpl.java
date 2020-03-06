@@ -2,11 +2,10 @@ package edu.zju.ccnt.health.api.service.Impl;
 
 import edu.zju.ccnt.health.api.dao.ApiBaseInfo;
 import edu.zju.ccnt.health.api.dao.ApiMapper;
-import edu.zju.ccnt.health.api.model.Api;
-import edu.zju.ccnt.health.api.response.ServerResponse;
+import edu.zju.ccnt.health.api.model.domin.Api;
+import edu.zju.ccnt.health.response.ServerResponse;
 import edu.zju.ccnt.health.api.service.IApiService;
-import edu.zju.ccnt.health.api.vo.ApiBaseInfoVO;
-import lombok.extern.slf4j.Slf4j;
+import edu.zju.ccnt.health.api.model.vo.ApiBaseInfoVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.slf4j.Logger;
@@ -106,7 +105,7 @@ public class ApiServiceServiceImpl implements IApiService {
      * @param id
      * @return
      */
-    public ServerResponse<edu.zju.ccnt.health.api.model.Api> getInfo(Integer id) {
+    public ServerResponse<Api> getInfo(Integer id) {
         logger.info("获取id为" + id + "的Api的详细信息");
         try {
             Api api = apiMapper.selectByPrimaryKey(id);

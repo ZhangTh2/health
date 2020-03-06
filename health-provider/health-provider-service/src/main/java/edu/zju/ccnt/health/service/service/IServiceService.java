@@ -1,8 +1,8 @@
 package edu.zju.ccnt.health.service.service;
 
-import edu.zju.ccnt.health.service.model.Service;
-import edu.zju.ccnt.health.service.response.ServerResponse;
-import edu.zju.ccnt.health.service.vo.SearchInfoVo;
+import edu.zju.ccnt.health.service.model.domin.Service;
+import edu.zju.ccnt.health.response.ServerResponse;
+import edu.zju.ccnt.health.service.model.vo.SearchInfoVo;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.math.BigDecimal;

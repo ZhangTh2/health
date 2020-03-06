@@ -28,6 +28,7 @@
     </properties>
     <dependencies>
 
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -78,12 +79,6 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
-        <!--lombok插件-->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
 
         <!--DB connect-->
         <dependency>
@@ -126,6 +121,12 @@
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>edu.zju.ccnt.health</groupId>
+            <artifactId>health-common-util</artifactId>
+            <version>1.0</version>
         </dependency>
     </dependencies>
 

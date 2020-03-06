@@ -1,7 +1,7 @@
 package edu.zju.ccnt.health.servicecategory.controller.frontend;
 
 import edu.zju.ccnt.health.servicecategory.service.IServiceCategoryService;
-import edu.zju.ccnt.health.servicecategory.response.ServerResponse;
+import edu.zju.ccnt.health.response.ServerResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

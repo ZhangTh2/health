@@ -1,12 +1,10 @@
 package edu.zju.ccnt.health.admin.dao;
 
-import edu.zju.ccnt.health.admin.model.Admin;
-import edu.zju.ccnt.health.admin.vo.DetailInfoVo;
-import edu.zju.ccnt.health.admin.vo.SearchInfoVo;
+import edu.zju.ccnt.health.admin.model.domin.Admin;
+import edu.zju.ccnt.health.admin.model.vo.DetailInfoVo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 

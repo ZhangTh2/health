@@ -1,8 +1,8 @@
 package edu.zju.ccnt.health.service.controller;
 
-import edu.zju.ccnt.health.service.model.Service;
+import edu.zju.ccnt.health.service.model.domin.Service;
 import edu.zju.ccnt.health.service.service.IServiceService;
-import edu.zju.ccnt.health.service.response.ServerResponse;
+import edu.zju.ccnt.health.response.ServerResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;

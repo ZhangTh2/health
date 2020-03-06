@@ -1,7 +1,7 @@
 package edu.zju.ccnt.health.api.controller;
 
-import edu.zju.ccnt.health.api.model.Api;
-import edu.zju.ccnt.health.api.response.ServerResponse;
+import edu.zju.ccnt.health.api.model.domin.Api;
+import edu.zju.ccnt.health.response.ServerResponse;
 import edu.zju.ccnt.health.api.service.IApiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

@@ -13,8 +13,6 @@
     <description>admin manage module in health-platform</description>
     <packaging>jar</packaging>
 
-
-
     <build>
         <plugins>
             <plugin>

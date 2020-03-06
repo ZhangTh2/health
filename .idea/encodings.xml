@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/health-center" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/health-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/health-common/health-common-utils" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/health-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/health-hystrix" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/health-monitor" charset="UTF-8" />

@@ -1,8 +1,8 @@
 package edu.zju.ccnt.health.servicecategory.service;
 
-import edu.zju.ccnt.health.servicecategory.vo.ServiceCategoryVO;
-import edu.zju.ccnt.health.servicecategory.response.ServerResponse;
-import edu.zju.ccnt.health.servicecategory.vo.ServiceVo;
+import edu.zju.ccnt.health.servicecategory.model.vo.ServiceCategoryVO;
+import edu.zju.ccnt.health.response.ServerResponse;
+import edu.zju.ccnt.health.servicecategory.model.vo.ServiceVo;
 
 import java.util.List;
 

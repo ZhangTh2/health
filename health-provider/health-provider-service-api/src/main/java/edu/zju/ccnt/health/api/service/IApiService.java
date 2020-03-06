@@ -1,8 +1,8 @@
 package edu.zju.ccnt.health.api.service;
 
-import edu.zju.ccnt.health.api.model.Api;
-import edu.zju.ccnt.health.api.response.ServerResponse;
-import edu.zju.ccnt.health.api.vo.ApiBaseInfoVO;
+import edu.zju.ccnt.health.api.model.domin.Api;
+import edu.zju.ccnt.health.response.ServerResponse;
+import edu.zju.ccnt.health.api.model.vo.ApiBaseInfoVO;
 
 import java.util.List;
 
@@ -48,6 +48,6 @@ public interface IApiService {
      * @param id
      * @return
      */
-    ServerResponse<edu.zju.ccnt.health.api.model.Api> getInfo(Integer id);
+    ServerResponse<Api> getInfo(Integer id);
 
 }

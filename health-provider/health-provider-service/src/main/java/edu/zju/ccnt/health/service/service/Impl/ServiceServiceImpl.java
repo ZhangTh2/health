@@ -1,18 +1,15 @@
 package edu.zju.ccnt.health.service.service.Impl;
 
-import edu.zju.ccnt.health.provider.service.IServiceCategoryFeignApi;
 import edu.zju.ccnt.health.service.service.IServiceService;
 import edu.zju.ccnt.health.service.service.ServiceCategoryRpcService;
-import edu.zju.ccnt.health.service.vo.BaseInfoVo;
-import edu.zju.ccnt.health.service.vo.SearchInfoVo;
+import edu.zju.ccnt.health.service.model.vo.BaseInfoVo;
+import edu.zju.ccnt.health.service.model.vo.SearchInfoVo;
 import edu.zju.ccnt.health.service.dao.ServiceMapper;
-import edu.zju.ccnt.health.service.dto.BaseInfoDTO;
-import edu.zju.ccnt.health.service.response.ServerResponse;
-import edu.zju.ccnt.health.service.utils.FtpUtils;
-import edu.zju.ccnt.health.service.utils.ImageIdUtils;
+import edu.zju.ccnt.health.service.model.dto.BaseInfoDTO;
+import edu.zju.ccnt.health.response.ServerResponse;
+import edu.zju.ccnt.health.ftp.*;
 import lombok.extern.slf4j.Slf4j;
-import edu.zju.ccnt.health.service.model.Service;
-import org.springframework.beans.factory.annotation.Autowired;
+import edu.zju.ccnt.health.service.model.domin.Service;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.multipart.MultipartFile;
 import org.slf4j.Logger;
